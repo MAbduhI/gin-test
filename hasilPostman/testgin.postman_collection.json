@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "f41539c8-a397-46ba-9946-405ad8eba090",
+		"name": "testgin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8001/data",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"data"
+					]
+				},
+				"description": "get data"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8001/datapost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"nama\": \"baju pramuka\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8001/datapost",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"datapost"
+					]
+				},
+				"description": "Create Record"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8001/datapost",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"nama\": \"baju pramuka\",\n \"change_nama\" : \"baju eskul\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8001/datapost",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"datapost"
+					]
+				},
+				"description": "Update Data column sebagian"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8001/datapost",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"nama\": \"baju eskul\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8001/datapost",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"datapost"
+					]
+				},
+				"description": "Berhasil Delete"
+			},
+			"response": []
+		}
+	]
+}
